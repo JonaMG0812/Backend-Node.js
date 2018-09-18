@@ -7,5 +7,6 @@ var router = express.Router();
 
 router.get('/home', ProjectController.home);
 router.get('/test', ProjectController.test);
+router.post('/save-project', ProjectController.saveProject);
 
 module.exports = router;
