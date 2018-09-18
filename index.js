@@ -1,13 +1,13 @@
 'use strict'
 
-//Importing moongose
+//Importing mongoose
 var mongoose = require('mongoose');
 var app = require('./app');
 var port = 3700;
 
 //Connecting to the database
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost:27017/portafolio', { useNewUrlParser: true })
+mongoose.connect('mongodb://localhost:27017/portfolio', { useNewUrlParser: true })
     .then(() => {
         console.log('Connection to the database successfully established');
         //Creating server
