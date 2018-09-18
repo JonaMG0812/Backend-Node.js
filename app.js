@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 app.get('/test', (req, res) => {
     res.status(200).send({
         message: "Status 200: Everything is awesome!"
-    })
+    });
 });
 
 //Exporting
